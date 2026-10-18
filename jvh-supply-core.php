@@ -55,11 +55,19 @@ function jvh_supply_contact_settings_callback() {
  * Register Settings API fields (Phone, Email, Address, Header Logo, Footer Logo)
  */
 function jvh_supply_register_settings() {
-    register_setting( 'jvh_theme_options_group', 'jvh_site_phone' );
-    register_setting( 'jvh_theme_options_group', 'jvh_site_email' );
-    register_setting( 'jvh_theme_options_group', 'jvh_site_address' );
+    // Header Settings Fields
+    register_setting( 'jvh_theme_options_group', 'jvh_top_bar_text' );
     register_setting( 'jvh_theme_options_group', 'jvh_header_logo' );
+    register_setting( 'jvh_theme_options_group', 'jvh_header_phone' );
+    register_setting( 'jvh_theme_options_group', 'jvh_header_email' );
+
+    // Footer Settings Fields
     register_setting( 'jvh_theme_options_group', 'jvh_footer_logo' );
+    register_setting( 'jvh_theme_options_group', 'jvh_footer_desc' );
+    register_setting( 'jvh_theme_options_group', 'jvh_footer_phone' );
+    register_setting( 'jvh_theme_options_group', 'jvh_footer_email' );
+    register_setting( 'jvh_theme_options_group', 'jvh_footer_address' );
+    register_setting( 'jvh_theme_options_group', 'jvh_footer_hours' );
 }
 add_action( 'admin_init', 'jvh_supply_register_settings' );
 
