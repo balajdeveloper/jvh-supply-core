@@ -35,7 +35,7 @@
                     <th scope="row">Top Bar Text</th>
                     <td>
                         <input type="text" name="jvh_top_bar_text" value="<?php echo esc_attr( $top_bar_text ); ?>" class="regular-text" placeholder="Janitorial & safety supplies for..." />
-                        <p class="description">Top bar mein show hone wala notice text.</p>
+                        <p class="description">Notice text displayed in the top bar.</p>
                     </td>
                 </tr>
 
@@ -88,7 +88,7 @@
                     <th scope="row">Footer Description</th>
                     <td>
                         <textarea name="jvh_footer_desc" rows="3" class="regular-text"><?php echo esc_textarea( $footer_desc ); ?></textarea>
-                        <p class="description">Logo ke neechay aane wala chota description text.</p>
+                        <p class="description">The short description text placed below the logo.</p>
                     </td>
                 </tr>
 
@@ -121,7 +121,7 @@
                     <th scope="row">Copyright Text</th>
                     <td>
                         <input type="text" name="jvh_footer_copyright" value="<?php echo esc_attr( get_option( 'jvh_footer_copyright' ) ); ?>" class="regular-text" placeholder="&copy; 2026 JVH Supply. All rights reserved." />
-                        <p class="description">Footer ke bottom par show hone wala copyright text.</p>
+                        <p class="description">The copyright text displayed at the bottom of the footer.</p>
                     </td>
                 </tr>
             </table>
