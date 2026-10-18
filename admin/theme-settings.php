@@ -95,25 +95,34 @@
                 <!-- Footer Phone -->
                 <tr valign="top">
                     <th scope="row">Footer Phone</th>
-                    <td><input type="text" name="jvh_footer_phone" value="<?php echo esc_attr( $footer_phone ); ?>" class="regular-text" /></td>
+                    <td><input type="text" name="jvh_footer_phone" value="<?php echo esc_attr( $footer_phone ); ?>" class="regular-text" placeholder="Contact Number"  /></td>
                 </tr>
 
                 <!-- Footer Email -->
                 <tr valign="top">
                     <th scope="row">Footer Email</th>
-                    <td><input type="email" name="jvh_footer_email" value="<?php echo esc_attr( $footer_email ); ?>" class="regular-text" /></td>
+                    <td><input type="email" name="jvh_footer_email" value="<?php echo esc_attr( $footer_email ); ?>" class="regular-text" placeholder="Email Address"  /></td>
                 </tr>
 
-                <!-- Footer Address -->
+                <!-- Business Address -->
                 <tr valign="top">
                     <th scope="row">Business Address</th>
                     <td><textarea name="jvh_footer_address" rows="2" class="regular-text"><?php echo esc_textarea( $footer_addr ); ?></textarea></td>
                 </tr>
 
-                <!-- Footer Hours -->
+                <!-- Business Hours -->
                 <tr valign="top">
                     <th scope="row">Business Hours</th>
                     <td><input type="text" name="jvh_footer_hours" value="<?php echo esc_attr( $footer_hours ); ?>" class="regular-text" placeholder="Mon - Fri: 8am - 5pm" /></td>
+                </tr>
+
+                <!-- Footer Copyright Text -->
+                <tr valign="top">
+                    <th scope="row">Copyright Text</th>
+                    <td>
+                        <input type="text" name="jvh_footer_copyright" value="<?php echo esc_attr( get_option( 'jvh_footer_copyright' ) ); ?>" class="regular-text" placeholder="&copy; 2026 JVH Supply. All rights reserved." />
+                        <p class="description">Footer ke bottom par show hone wala copyright text.</p>
+                    </td>
                 </tr>
             </table>
         </div>

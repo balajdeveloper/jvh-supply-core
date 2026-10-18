@@ -68,6 +68,7 @@ function jvh_supply_register_settings() {
     register_setting( 'jvh_theme_options_group', 'jvh_footer_email' );
     register_setting( 'jvh_theme_options_group', 'jvh_footer_address' );
     register_setting( 'jvh_theme_options_group', 'jvh_footer_hours' );
+    register_setting( 'jvh_theme_options_group', 'jvh_footer_copyright' );
 }
 add_action( 'admin_init', 'jvh_supply_register_settings' );
 
